@@ -1,5 +1,5 @@
 # TLDR
-```poetry``` users will enjoy ```lspoetry``` and ```catpoetry``` custom functions.
+```poetry``` users will enjoy [catpoetry](https://github.com/City-of-Memphis-Wastewater/powershell-tools/blob/main/catpoetry.ps1) and [lspoetry](https://github.com/City-of-Memphis-Wastewater/powershell-tools/blob/main/lspoetry.ps1) custom functions.
 Learn more about ```poetry``` [here](https://github.com/python-poetry/poetry).
 
 # Overview
