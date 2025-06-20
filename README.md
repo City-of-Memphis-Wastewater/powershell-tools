@@ -1,6 +1,5 @@
 # TLDR
-```poetry``` users will enjoy [catpoetry](https://github.com/City-of-Memphis-Wastewater/powershell-tools/blob/main/catpoetry.ps1) and [lspoetry](https://github.com/City-of-Memphis-Wastewater/powershell-tools/blob/main/lspoetry.ps1) custom functions.
-Learn more about ```poetry``` [here](https://github.com/python-poetry/poetry).
+[poetry](https://github.com/python-poetry/poetry) users will enjoy [catpoetry](https://github.com/City-of-Memphis-Wastewater/powershell-tools/blob/main/catpoetry.ps1) and [lspoetry](https://github.com/City-of-Memphis-Wastewater/powershell-tools/blob/main/lspoetry.ps1) custom functions.
 
 # Overview
 Notepad++, pyenv, and poetry are key parts of my Python devloper workflow in PowerShell. Here I share my PowerShell $profile (Microsoft.PowerShell_profile.ps1) file.
