@@ -14,28 +14,28 @@ These two functions allow you to use ```ls``` and ```cat``` functionality withou
 ## Before catpoetry
 ```
 poetry run python -m project.folder.script
-# --> manually edit, annoying, time-consuming
+# --> manually edit. annoying, time-consuming
 cat project/folder/script.py
 ```
 ## After, with catpoetry
 
 ```
 poetry run python -m project.folder.script
-# --> manually edit, easy :)
+# --> manually edit. easy :)
 catpoetry run python -m project.folder.script
 ```
 
 ## Before lspoetry
 ```
 poetry run python -m project.folder.subfolder
-# --> manually edit, annoying, time-consuming
+# --> manually edit. annoying, time-consuming
 ls project/folder/subfolder/
 ```
 ## After, with lspoetry
 
 ```
 poetry run python -m project.folder.subfolder
-# --> manually edit, easy :)
+# --> manually edit. easy :)
 lspoetry run python -m project.folder.subfolder
 ```
 
