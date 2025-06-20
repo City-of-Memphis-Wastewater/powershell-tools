@@ -6,7 +6,7 @@ Novel contributions to the community:
 - **lspoetry**
 - **catpoetry**
  
-These two functions allow you to use ls and cat functionality without having to spend time altering your 'poetry run python' call.
+These two functions allow you to use ```ls``` and ```cat``` functionality without having to spend time altering your 'poetry run python' call.
 
 ## Before catpoetry
 ```
