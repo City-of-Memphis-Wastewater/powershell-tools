@@ -1,5 +1,5 @@
 # Overview
-Notepad++, pyenv, and poetry are key parts of my Python devloper workflow in PowerShell. Here I share my PowerShell $profile file.
+Notepad++, pyenv, and poetry are key parts of my Python devloper workflow in PowerShell. Here I share my PowerShell $profile (Microsoft.PowerShell_profile.ps1) file.
 
 # Novel Contributions: catpoetry, lspoetry
 Novel contributions to the community: 
