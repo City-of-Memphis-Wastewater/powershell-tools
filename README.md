@@ -1,3 +1,7 @@
+#TLDR
+```poetry``` users will enjoy ```lspoetry``` and ```catpoetry``` custom functions.
+Learn more about ```poetry``` [here](https://github.com/python-poetry/poetry).
+
 # Overview
 Notepad++, pyenv, and poetry are key parts of my Python devloper workflow in PowerShell. Here I share my PowerShell $profile (Microsoft.PowerShell_profile.ps1) file.
 
