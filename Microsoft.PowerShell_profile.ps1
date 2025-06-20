@@ -1,24 +1,24 @@
+# Text editing
 Set-Alias np "notepad++"
 Set-Alias nano "notepad++" # blasphemy
 
-$env:PYENV = "$HOME\.pyenv\pyenv-win"
+# pyenv setup
 $env:PYENV_ROOT = "$HOME\.pyenv\pyenv-win"
-$env:PYENV_HOME = "$HOME\.pyenv\pyenv-win"
-$env:Path += ";$env:PYENV\bin;$env:PYENV\shims"
-
-# Manually set up the pyenv environment
+$env:PYENV = $env:PYENV_ROOT
+$env:PYENV_HOME = $env:PYENV_ROOT
 function Invoke-PyenvInit {
-    # Update PATH to include pyenv directories
-    $pyenvShims = "$env:PYENV\shims"
-    $pyenvBin = "$env:PYENV\bin"
+    $pyenvBin = Join-Path $env:PYENV_ROOT 'bin'
+    $pyenvShims = Join-Path $env:PYENV_ROOT 'shims'
     $env:PATH = "$pyenvBin;$pyenvShims;$env:PATH"
 }
 Invoke-PyenvInit
 
-# Print the contents of the current directory by adding ls to the start of a poetry python -m call with dot notation.
-# Specifically for usage with poetry or python -m calls.
-# The downside: no tab completion.
+# Poetry dev flow optimization
 function lspoetry($modpath) {
+    # Print the contents of the current directory by adding ls to the start of a poetry python -m call with dot notation.
+    # Specifically for usage with poetry or python -m calls.
+    # The downside: no tab completion.
+    
     # Remove 'run python -m ' or just 'python -m ' if present.
     $modpath = ($modpath -replace 'run python -m', '').Trim()
 	$modpath = ($modpath -replace 'python -m', '').Trim()
@@ -47,10 +47,12 @@ function lspoetry($modpath) {
     }
 }
 
-# Print the contents of the current file by adding cat to the start of a poetry python -m call with dot notation.
-# Specifically for usage with poetry or python -m calls.
-# The downside: no tab completion.
+
 function catpoetry($modpath) {
+    # Print the contents of the current file by adding cat to the start of a poetry python -m call with dot notation.
+    # Specifically for usage with poetry or python -m calls.
+    # The downside: no tab completion.
+    
     # Remove 'run python -m ' or just 'python -m ' if present.
     $modpath = ($modpath -replace 'run python -m', '').Trim()
 	$modpath = ($modpath -replace 'python -m', '').Trim()
@@ -80,6 +82,7 @@ function catpoetry($modpath) {
     }
 }
 
+# Common PowerShell gotcha
 Remove-Item Alias:curl # Solution to a common PowerShell issue
 
 # same as ii . ; can be used PS1 in scripts
